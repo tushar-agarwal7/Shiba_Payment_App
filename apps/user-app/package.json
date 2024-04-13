@@ -9,6 +9,9 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
     "@repo/db": "*",
     "@repo/ui": "*",
     "@types/bcrypt": "^5.0.2",

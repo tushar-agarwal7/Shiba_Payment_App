@@ -1,4 +1,5 @@
 import SidebarItem from "../../components/SidebarItems";
+import {User} from "lucide-react"
 
 export default function Layout({
     children,
@@ -12,6 +13,7 @@ export default function Layout({
        <SidebarItem href={"/transfer"} icon={<TransferIcon/>} title="Transfer"/>
        <SidebarItem href={"/transactions"} icon={<TransactionsIcon/>} title="Transactions"/>
        <SidebarItem href={"/p2p"}  icon={<P2Ptransfer/>} title="P2P Transactions"/>
+       <SidebarItem href={"/profile"}  icon={<User/>} title="My Profile"/>
 
         </div>
         
