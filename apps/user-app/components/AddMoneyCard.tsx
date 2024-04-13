@@ -28,10 +28,8 @@ export const AddMoney=()=>{
                 setValue(Number(val))
             }}/>
         </div>
-        <div className="flex mt-4 ">
-        <div>
-         Bank
-        </div>
+        <div className="mt-4 ">
+        
         <Select onSelect={(value)=>{
             setRedirectUrl(SUPPORTED_BANKS.find(x=>x.name===value)?.redirectUrl || " ")
             setProvider(SUPPORTED_BANKS.find(x=>x.name===value)?.name || "")

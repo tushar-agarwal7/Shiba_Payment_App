@@ -29342,8 +29342,7 @@ app.post("/hdfcWebhook", async (req, res) => {
           token: paymentInformation.token
         },
         data: {
-          status: "Success",
-          amount: Number(paymentInformation.amount)
+          status: "Success"
         }
       })
     ]);
