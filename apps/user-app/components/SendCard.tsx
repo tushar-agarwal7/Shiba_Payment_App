@@ -12,18 +12,19 @@ export function SendCard() {
 
     return <div className="h-[90vh]">
         <Center>
-            <Card title="Send">
+            <Card title="Make the Payment">
                 <div className="min-w-72 pt-2">
                     <TextInput placeholder={"Number"} label="Number" onChange={(value) => {
                         setNumber(value)
                     }} />
+                    <br />
                     <TextInput placeholder={"Amount"} label="Amount" onChange={(value) => {
                         setAmount(value)
                     }} />
                     <div className="pt-4 flex justify-center">
                         <Button onClick={async() => {
                         await p2pTransfer(number,Number(amount)*100)
-                        }}>Send</Button>
+                        }}>Pay</Button>
                     </div>
                 </div>
             </Card>

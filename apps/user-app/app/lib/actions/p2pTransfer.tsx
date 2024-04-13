@@ -44,13 +44,13 @@ export async function p2pTransfer(to: string, amount: number) {
             data: { amount: { increment: amount } },
           });
 
-        //   await tx.p2pTransfer.create({
-        //     data: {
-        //         fromUserId: Number(from),
-        //         toUserId: toUser.id,
-        //         amount,
-        //         timestamp: new Date()
-        //     }
-        //   })
+          await tx.p2pTransfer.create({
+            data: {
+                fromUserId: Number(from),
+                toUserId: toUser.id,
+                amount,
+                startTime: new Date()
+            }
+          })
     });
 }

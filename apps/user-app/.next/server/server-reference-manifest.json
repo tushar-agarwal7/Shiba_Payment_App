@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "d2b590ab97d74425adc9c305c0d26dbbb7b36a65": {
+      "workers": {
+        "app/(dashboard)/p2p/page": "(action-browser)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Ftushar%2Fcoding%2Fprojects%2FShiba_Payment_App%2Fapps%2Fuser-app%2Fapp%2Flib%2Factions%2Fp2pTransfer.tsx%22%2C%5B%22p2pTransfer%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(dashboard)/p2p/page": "action-browser"
+      }
+    },
+    "f1768742fb220663ddb6aecb588f71cb56d76dfb": {
+      "workers": {
+        "app/(dashboard)/transfer/page": "(action-browser)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Ftushar%2Fcoding%2Fprojects%2FShiba_Payment_App%2Fapps%2Fuser-app%2Fapp%2Flib%2Factions%2FcreateOnRampTransactions.ts%22%2C%5B%22createOnRampTransactions%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(dashboard)/transfer/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "0aID0L1yMrgu4oQ3+1WZYrI7BJsP9+y4ePUCgzlG7qg="
+  "encryptionKey": "PVTX8NO7Rk1rRv0PlQ7R4Rt/9B7u7pXL11aieCcWd6U="
 }
