@@ -1,6 +1,9 @@
 import { getServerSession } from "next-auth"
 import { authOptions } from "../../lib/auth"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
+import db from "@repo/db/client"
+import prisma from "@repo/db/client"
+
 
 export const  GET=async()=>{
     const session=await getServerSession(authOptions)
@@ -15,3 +18,22 @@ export const  GET=async()=>{
         status:403
     })
 }
+
+// export async function POST(req: NextRequest) {
+//     const body = await req.json();
+//    const user=await prisma.user.create({
+//     data:{
+//         name:body.name,
+//         number:body.phone,
+//         email:body.email,
+//         password:body.password
+
+//     }
+//    })
+   
+//    console.log(user.id)
+   
+//     return NextResponse.json({
+//         message:"Signed Up"
+//     })
+// }

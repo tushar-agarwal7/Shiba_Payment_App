@@ -7,11 +7,11 @@ import { useRouter } from "next/navigation"
 export function AppbarClient(){
  const session=useSession()
  const router=useRouter()
- console.log(session)
  return <div>
     <Appbar user={session.data?.user} onSignin={signIn} onSignout={async()=>{
         await signOut()
         router.push('api/auth/signin')
         }}/>
+
  </div>
 }
