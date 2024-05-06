@@ -5,11 +5,13 @@ import { Center } from "@repo/ui/center";
 import { TextInput } from "@repo/ui/text-input";
 import { useState } from "react";
 import { p2pTransfer } from "../app/lib/actions/p2pTransfer";
+import { useSession } from "next-auth/react";
 
 export function SendCard() {
     const [number, setNumber] = useState("");
     const [amount, setAmount] = useState("");
-
+   const session=useSession()
+   console.log(session.data)
     return <div className="h-[90vh]">
         <Center>
             <Card title="Make the Payment">
