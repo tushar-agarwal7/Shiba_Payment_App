@@ -25,7 +25,7 @@ export default function Profile({ amount, session }: any) {
                             <div className="bg-indigo-100 dark:bg-gray-700 rounded-lg p-4 w-full">
                                 <div className="flex justify-between items-center">
                                     <p className="text-indigo-500 dark:text-violet-400">Total Balance</p>
-                                    <p className="text-2xl font-bold text-indigo-900 dark:text-violet-100">{amount}</p>
+                                    <p className="text-2xl font-bold text-indigo-900 dark:text-violet-100">{amount/100}</p>
                                 </div>
                             </div>
                         </Fade>

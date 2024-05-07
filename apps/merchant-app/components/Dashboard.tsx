@@ -59,7 +59,7 @@ export function Dashboard({ amount }: any) {
     return (
         <div className="bg-gray-100 p-8 rounded-lg shadow-md font-serif">
             <h1 className="text-4xl text-blue-400 mb-4">Hi, {session.data?.user?.name}</h1>
-            <h1 className="text-4xl text-dark-400 mb-4">Your balance: {balance}</h1>
+            <h1 className="text-4xl text-dark-400 mb-4">Your balance: {balance/100}</h1>
             <canvas id="balanceChart" width="400" height="200"></canvas>
             <div className="animate-bounce">
                 <button onClick={() => router.push("/p2p")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
